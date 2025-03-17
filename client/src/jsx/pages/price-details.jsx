@@ -15,7 +15,7 @@ const PriceDetails = () => {
       <div className="content-body">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-8 col-xl-8">
+            {/* <div className="col-xxl-8 col-xl-8">
               <div className="card">
                 <div className="card-body">
                   <div className="this-coin-price">
@@ -189,7 +189,7 @@ const PriceDetails = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
               <div className="card">
                 <div className="card-body">

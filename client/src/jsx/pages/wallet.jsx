@@ -68,7 +68,7 @@ const Wallet = () => {
         <div className="col-xxl-6">
           <div className="card">
             <div className="card-header">
-              <h4 className="card-title">Add Address </h4>
+              <h4 className="card-title">Add Address</h4>
               <button type="button" className="btn btn-transparent" onClick={handleShow}>
                 <svg style={{width: '1.5rem', height: '1.5rem'}} xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><path fill="currentColor" d="M352 480h320a32 32 0 1 1 0 64H352a32 32 0 0 1 0-64"/><path fill="currentColor" d="M480 672V352a32 32 0 1 1 64 0v320a32 32 0 0 1-64 0"/><path fill="currentColor" d="M512 896a384 384 0 1 0 0-768a384 384 0 0 0 0 768m0 64a448 448 0 1 1 0-896a448 448 0 0 1 0 896"/></svg>
               </button>
@@ -85,10 +85,9 @@ const Wallet = () => {
                         value={coinName}
                         onChange={(e) => setCoinName(e.target.value)}
                       >
-                        <option value="Bitcoin">Bitcoin</option>
-                        <option value="Ethereum">Ethereum</option>
-                        <option value="Tether">Tether</option>
-                        <option value="Monero">Monero</option>
+                        <option value="USDT">USDT</option>
+                        <option value="Ethereum">BSC 2.0</option>
+                
                       </Form.Select>
                     </Form.Group>
 
@@ -184,6 +183,7 @@ const Wallet = () => {
           <div className="card">
             <div className="card-header">
               <h4 className="card-title">Balance</h4>
+             
             </div>
             <div className="card-body">
               <div className="row align-items-center">
@@ -273,7 +273,7 @@ const Wallet = () => {
                     <tr>
                       <td className="coin-name">
                         <i className="cc BTC"></i>
-                        <span>Bitcoin</span>
+                        <span>Usdt</span>
                       </td>
                       <td>0</td>
                       <td>0</td>

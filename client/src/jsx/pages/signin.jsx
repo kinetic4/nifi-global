@@ -17,7 +17,7 @@ const Signin = () => {
               <Link to={"/"}>
                 <img src={logo} alt="" style={{width: '5rem'}}/>
               </Link>
-              <h4 className="card-title mt-3">Sign in to Qash</h4>
+              <h4 className="card-title mt-3">Sign in to Nifi</h4>
             </div>
             <div className="auth-form card">
               <div className="card-body">

@@ -5,7 +5,7 @@ import logo from "../../images/logo.png";
 const Sidebar = ({ activeMenu }) => {
   const menus = [
     { id: 1, href: "/dashboard", title: "Home", icon: "icofont-ui-home" },
-    // { id: 2, href: "/trade", title: "Trade", icon: "icofont-stack-exchange" },
+    { id: 2, href: "/trade", title: "Trade", icon: "icofont-stack-exchange" },
     { id: 3, href: "/wallet", title: "Wallet", icon: "icofont-wallet" },
     // { id: 4, href: "/price", title: "Price", icon: "icofont-price" },
     // {
