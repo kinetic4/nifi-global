@@ -66,7 +66,7 @@ const Dashboard = () => {
         </div>
         <div className="col-xxl-4 col-xl-4 col-lg-6">
           <div className="price-widget position-relative bg-btc">
-            <Link to={"/price-details"}>
+            <Link to={"#"}>
               <div className="price-content">
                 <div className="icon-title">
                 <svg style={{width: '3rem', height: '2rem', color: 'white'}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><circle cx="12" cy="12" r="3"/><path d="M2 9a4 4 0 0 0 4-4v0m12 14a4 4 0 0 1 4-4v0"/></g></svg>
@@ -82,7 +82,7 @@ const Dashboard = () => {
         </div>
         <div className="col-xxl-4 col-xl-4 col-lg-6">
           <div className="price-widget position-relative bg-eth">
-            <Link to={"/price-details"}>
+            <Link to={"#"}>
               <div className="price-content">
                 <div className="icon-title">
                 <svg style={{width: '3rem', height: '2rem', color: 'white'}} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M3.5 2A1.5 1.5 0 0 0 2 3.5v1.193c0 .52.27 1.002.711 1.275l3.866 2.39a3 3 0 1 0 2.846 0l3.866-2.39A1.5 1.5 0 0 0 14 4.693V3.5A1.5 1.5 0 0 0 12.5 2zM3 3.5a.5.5 0 0 1 .5-.5H5v3.208l-1.763-1.09A.5.5 0 0 1 3 4.693zm3 3.326V3h4v3.826L8.263 7.9a.5.5 0 0 1-.526 0zm5-.618V3h1.5a.5.5 0 0 1 .5.5v1.193a.5.5 0 0 1-.237.425zM6 11a2 2 0 1 1 4 0a2 2 0 0 1-4 0"/></svg>                  <span>Rewards</span>
@@ -366,7 +366,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="col-xxl-4 col-xl-4">
+        {/* <div className="col-xxl-4 col-xl-4">
           <div className="card">
             <div className="card-header">
               <h4 className="card-title">Position Valuation</h4>
@@ -411,7 +411,7 @@ const Dashboard = () => {
               </PerfectScrollbar>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="col-xxl-8 col-xl-8">
           <div className="card">
             <div className="card-header">
@@ -521,6 +521,42 @@ const Dashboard = () => {
                   </tbody>
                 </table>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-xxl-4 col-xl-4">
+          <div className="card">
+            <div className="card-header">
+              <h4 className="card-title">Products</h4>
+            </div>
+            <div className="card-body">
+              <PerfectScrollbar className="balance-widget trade-balance">
+                <li>
+                  <h5>Bitcoin</h5>
+                  <div className="text-right">
+                   <button className="btn btn-primary">
+                    Buy Now
+                   </button>
+                  </div>
+                </li>
+                <li>
+                  <h5>Usdt</h5>
+                  <div className="text-right">
+                  <button className="btn btn-primary">
+                    Buy Now
+                   </button>
+                  </div>
+                </li>
+                <li>
+                  <h5>BSC 2.0</h5>
+                  <div className="text-right">
+                  <button className="btn btn-primary">
+                    Buy Now
+                   </button>
+                   </div>
+                </li>
+               
+              </PerfectScrollbar>
             </div>
           </div>
         </div>

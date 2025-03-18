@@ -65,7 +65,7 @@ const Wallet = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-xxl-6">
+        <div className="col-xxl-12">
           <div className="card">
             <div className="card-header">
               <h4 className="card-title">Add Address</h4>
@@ -179,7 +179,7 @@ const Wallet = () => {
           </div>
         </div>
 
-        <div className="col-xxl-6">
+        {/* <div className="col-xxl-6">
           <div className="card">
             <div className="card-header">
               <h4 className="card-title">Balance</h4>
@@ -250,9 +250,9 @@ const Wallet = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="col-xxl-6">
+        {/* <div className="col-xxl-6">
           <div className="card">
             <div className="card-header">
               <h4 className="card-title">Available Balance </h4>
@@ -327,8 +327,8 @@ const Wallet = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-xxl-6">
+        </div> */}
+        {/* <div className="col-xxl-6">
           <div className="card">
             <div className="card-header">
               <h4 className="card-title">Total </h4>
@@ -396,7 +396,7 @@ const Wallet = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="col-xxl-12">
           <div className="card">
             <div className="card-header">

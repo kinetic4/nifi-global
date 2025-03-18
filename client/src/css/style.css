@@ -13147,3 +13147,9 @@ button.dropdown-toggle.btn.btn-primary {
   }
 }
 
+.save-changes {
+  width: 10rem;
+  margin-bottom: 2rem;
+ margin-left: auto;
+ display: block;
+}
