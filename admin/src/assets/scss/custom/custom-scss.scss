@@ -1,0 +1,396 @@
+[data-bs-theme="dark"] {
+
+    #SvgjsText1004,
+    #SvgjsText1370,
+    #SvgjsText1856,
+    #SvgjsText2817,
+    #SvgjsText20771,
+    #SvgjsText1640 {
+        fill: white !important;
+    }
+}
+
+#SvgjsG23853 {
+    transform: translate(15px, 2px) !important;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.leaflet-attribution-flag {
+    display: none !important;
+}
+
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-scale {
+    font-size: 11px !important;
+}
+
+.fc-theme-standard .fc-toolbar-chunk .fc-button {
+    background: rgba(var(--bs-primary-rgb), 0.1) !important;
+    color: #3378ff !important;
+    border: none;
+    text-transform: capitalize;
+}
+
+.fc-toolbar-chunk .fc-button-group .fc-button.fc-button-active {
+    color: #fff !important;
+    background-color: #3378ff !important;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none !important;
+}
+
+// Header
+.header-dropdown-item-icon {
+    width: 15px !important;
+    height: 15px !important;
+    min-width: 15px !important;
+}
+
+// Sidebar
+.submenu {
+    a {
+        margin-top: 5px !important;
+    }
+}
+
+// 
+.profile-icon {
+    height: 58px !important;
+    width: 58px !important;
+    line-height: 58px !important;
+    font-size: 26px !important;
+    text-decoration: none !important;
+}
+
+// Faq page accordian
+.accordion-button:not(.collapsed) {
+    color: unset !important;
+    background-color: unset !important;
+    box-shadow: none !important;
+}
+
+
+// product table
+.iq-product-table,
+.iq-order-table {
+    thead {
+        th {
+            color: var(--bs-secondary-color) !important
+        }
+    }
+}
+
+.iq-customer-table,
+.iq-invoice-table,
+.iq-order-table {
+
+    thead {
+        th:first-child {
+            padding-right: 0 !important;
+            width: 23.5px
+        }
+    }
+
+    tbody {
+        td:first-child {
+            padding-right: 0 !important;
+            width: 23.5px
+        }
+    }
+}
+
+//masnory
+.my-masonry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+}
+
+.my-masonry-grid_column {
+    padding-left: 30px;
+    background-clip: padding-box;
+}
+
+// Calendar 
+.fc-scrollgrid-sync-inner,
+.fc-list-day-cushion {
+    a:not(.fc-event) {
+        color: #213446 !important;
+    }
+}
+
+.fc-list-event-dot {
+    opacity: .2;
+}
+
+.fc-event-time {
+    font-weight: 800 !important;
+}
+
+.fc-event .fc-event-title {
+    font-weight: 0 !important;
+}
+
+.fc-listWeek-view.fc-list {
+    overflow: auto;
+}
+
+.fc-day {
+    white-space: normal !important;
+}
+
+// Navbar
+.iq-navbar-custom {
+    .nav-item {
+        a {
+            border: none !important;
+        }
+    }
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+[data-bs-theme="dark"] {
+    #dark-mode+.form-check-label::after {
+        transform: translateX(1.6rem) !important;
+        position: absolute !important;
+        content: "" !important;
+    }
+
+    // Calendar
+    .fc-scrollgrid-sync-inner,
+    .fc-list-day-cushion {
+        a:not(.fc-event) {
+            color: #ffff !important;
+        }
+    }
+
+    .fc-theme-standard .fc-list-day-cushion {
+        background-color: var(--bs-gray-900) !important;
+    }
+
+    .fc-list-event-dot {
+        opacity: 1.6 !important;
+    }
+
+    // ChoiceJs
+    .iq-custom-choicejs {
+        .choices__list--dropdown {
+            .choices__list {
+                background-color: var(--bs-body-bg) !important;
+            }
+
+            .choices__item--selectable.is-highlighted {
+                background-color: #323131 !important;
+            }
+        }
+
+        .choices__inner,
+        .choices__list--dropdown {
+            .choices__input {
+                background-color: var(--bs-body-bg) !important;
+            }
+        }
+
+        .choices.is-disabled {
+            .choices__inner {
+                background-color: var(--bs-body-bg) !important
+            }
+        }
+    }
+
+    .datepicker-cell.focused:not(.selected) {
+        background-color: rgb(184.72, 189.74, 199.78) !important;
+    }
+
+    .datepicker-cell:not(.disabled):hover {
+        background-color: #3378ff !important;
+    }
+
+    .custom-white-color th {
+        color: white !important;
+    }
+}
+
+[data-bs-theme="light"] {
+    #dark-mode+.form-check-label::after {
+        transform: unset !important;
+    }
+}
+
+.fc-view-harness .fc-list-sticky .fc-scroller-liquid {
+    height: auto !important;
+}
+
+.iq-avatars .iq-avatar {
+    margin-right: 8px !important;
+}
+
+.custom-margin {
+    margin-left: 4px !important;
+}
+
+@media screen and (max-width : 450px) {
+    .fc-header-toolbar .fc-toolbar-chunk:not(:last-of-type) {
+        margin-bottom: 1rem;
+    }
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid rgba(0, 0, 0, 0);
+    border-bottom: 0;
+    border-left: .3em solid rgba(0, 0, 0, 0);
+}
+
+.fc-daygrid-event-harness .fc-event .fc-daygrid-event-dot {
+    display: none !important;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 1rem !important;
+}
+
+.fc-list-event:hover {
+    color: #161719 !important;
+}
+
+@media screen and (max-width : 376px) {
+    .date-icon-set-modal .relative-resp {
+        margin-top: 0.5rem;
+    }
+}
+
+.clearfix .accordion-item {
+    border: none !important;
+}
+
+.accordion-button::after {
+    content: none !important;
+}
+
+#faqAccordion .accordion-item,
+.accordion-button {
+    background-color: unset !important;
+}
+
+.apexcharts-tooltip-text-y-label {
+    text-transform: capitalize !important;
+}
+
+[data-bs-theme="dark"] {
+    .flatpickr-calendar {
+        background-color: var(--bs-gray-900) !important;
+         
+    }
+    .flatpickr-month, .flatpickr-weekday, .flatpickr-day {
+        color: var(--bs-heading-color) !important;
+    }
+
+    #SvgjsG1086,
+    #SvgjsG1062,
+    #SvgjsText1009,
+    #SvgjsText2366 {
+        fill: #fff !important;
+    }
+
+
+    // Choise js dropdown css   
+    .choices__list--dropdown,
+    .choices__list[aria-expanded] {
+        background-color: var(--bs-gray-900) !important;
+    }
+
+    .choices__list--dropdown .choices__item--selectable.is-highlighted,
+    .choices__list[aria-expanded] .choices__item--selectable.is-highlighted:hover {
+        background-color: var(--bs-body-bg) !important;
+    }
+
+    .choices[data-type*=select-one] .choices__input {
+        background-color: var(--bs-gray-900) !important;
+
+    }
+
+    .choices__list:hover {
+        color: white !important;
+        background-color: var(--bs-gray-900) !important;
+    }
+
+    .choices__list--single:hover {
+        background-color: var(--bs-body-bg) !important;
+    }
+
+}
+
+
+[data-bs-theme=dark] select option {
+    background: #6c757d !important;
+}
+
+// Form Validation
+.needs-validation.was-validated .col-12 {
+    margin-top: 45px !important;
+}
+
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0.2rem !important;
+    border-bottom-right-radius: 0.2rem !important;
+}
+
+.btn-group> :not(.btn-check)+.btn {
+    border-top-left-radius: 0.2rem !important;
+    border-bottom-left-radius: 0.2rem !important;
+}
+
+.custom-chart .apexcharts-svg .apexcharts-yaxis-texts-g text {
+    fill: unset !important;
+}
+
+.custom-chart .apexcharts-svg .apexcharts-xaxis-texts-g text {
+    fill: unset !important;
+}
+
+@media screen and (max-width : 376px) {
+    .custom-padding-top {
+        padding-top: 0.5rem !important;
+    }
+}
+
+@media screen and (max-width : 376px) {
+    .cust-margin {
+        margin-top: 1rem !important;
+    }
+}
+
+.iq-product-table .sorting_asc:first-child::before {
+    left: 9.6rem !important;
+}
+
+.iq-product-table .sorting_asc:first-child::after {
+    left: 9.6rem !important;
+}
+
+// DataTable Page arrow position css
+.datatable-arrow-position .sorting_asc:first-child::before {
+    left: 2.6rem !important;
+}
+
+.flatpickr-day {
+    border-radius: 0.5rem !important;
+}
+.flatpickr-day:hover {
+background-color: #3378ff !important;
+}
