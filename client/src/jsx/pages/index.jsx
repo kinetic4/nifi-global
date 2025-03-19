@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef, useEffect, useState} from "react";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import { Link } from "react-router-dom";
 import AreaChart from "../charts/area";
@@ -7,10 +7,28 @@ import PriceArea from "../charts/price-area";
 import profile2 from "../../images/profile/2.png";
 import Layout from "../layout/layout";
 import CopyClipboard from "../element/copy-clipboard";
+import CountUp from 'react-countup';
+import { Card, Button } from 'react-bootstrap';
+
+
 
 const Dashboard = () => {
 
+  const [referralCount, setReferralCount] = useState(0);
+  const [btcEarned, setBtcEarned] = useState(0);
+  const targetReferrals = 12;
+  const targetBtc = 0.025;
+
   const textToCopy = 'https://www.nifi.globals/join/12345'
+
+  useEffect(() => {
+    // Start the animation when component mounts
+    setTimeout(() => {
+      setReferralCount(targetReferrals);
+      setBtcEarned(targetBtc);
+    }, 500);
+  }, []);
+
 
   return (
     <Layout activeMenu={1}>
@@ -47,23 +65,55 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="col-xxl-6 col-xl-6 col-lg-12">
-          <div className="card">
-            <div className="card-body">
-              <div className="invite-content">
-                <h4>Get free BTC every day</h4>
-                <p>
-                  Earn free bitcoins in rewards by completing a learning mission
-                  daily or inviting friends to Nifi Global.{" "}
-                  <Link to={"#"}>Learn more</Link>
-                </p>
-
-                <Link to={"#"} className="btn btn-primary">
-                  Refferal
-                </Link>
+      <Card className="border-0 shadow-sm">
+        <Card.Body>
+          <div className="invite-content">
+            <h4 className="mb-4">Your Referral Stats</h4>
+            
+            <div className="referral-stats d-flex justify-content-around mb-4">
+              <div className="stat-item text-center">
+                <div className="stat-value display-4 fw-bold text-primary">
+                  <CountUp
+                    start={0}
+                    end={targetReferrals}
+                    duration={2.5}
+                    separator=","
+                  />
+                </div>
+                <div className="stat-label text-muted">Total Referrals</div>
+              </div>
+              
+              <div className="stat-item text-center">
+                <div className="stat-value display-4 fw-bold text-success">
+                  <CountUp
+                    start={0}
+                    end={targetBtc}
+                    duration={2.5}
+                    decimals={3}
+                    prefix="₿ "
+                  />
+                </div>
+                <div className="stat-label text-muted">Earned Rewards</div>
               </div>
             </div>
+            
+            <p className="text-center mb-4">
+              Keep earning! Invite more friends to Nifi Global and get free BTC rewards.{" "}
+              <a href="#" className="text-decoration-none">Learn more</a>
+            </p>
+            
+            <div className="referral-actions d-flex justify-content-center gap-2">
+              <Button variant="primary" className="px-4">
+                Invite Friends
+              </Button>
+              <Button variant="outline-secondary" className="px-4">
+                View History
+              </Button>
+            </div>
           </div>
-        </div>
+        </Card.Body>
+      </Card>
+    </div>
         <div className="col-xxl-4 col-xl-4 col-lg-6">
           <div className="price-widget position-relative bg-btc">
             <Link to={"#"}>
