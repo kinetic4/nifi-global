@@ -33,6 +33,7 @@ const SidebarStyle = () => {
   // Collapse state
   const [activeMenu, setActiveMenu] = useState(false)
   const [activesubMenu, setSubmenu] = useState(false)
+
   const [active, setActive] = useState('')
   useEffect(
     () => {
@@ -91,7 +92,7 @@ const SidebarStyle = () => {
                   <span className="ms-2">Plan</span>
                 </Link>
               </li>
-              <li className={`${location.pathname === '/app/transactions' || location.pathname === '/app/transactionNew' || location.pathname === '/app/transactionDetail' ? 'active' : ''}  sidebar-layout`} >
+              <li className={`${location.pathname === '/app/transaction' || location.pathname === '/app/transactionNew' || location.pathname === '/app/transactionDetail' ? 'active' : ''}  sidebar-layout`} >
                 <Link to="/app/transaction" className="svg-icon">
                   <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -104,19 +105,22 @@ const SidebarStyle = () => {
               <li className={`${location.pathname === '/app/withdrawlRequest' || location.pathname === '/app/transactionNew' || location.pathname === '/app/transactionDetail' ? 'active' : ''}  sidebar-layout`} >
                 <Link to="/app/withdrawlRequest" className="svg-icon">
                   <i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width='18' viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
                   </i>
-                  <span className="ms-2">Withdrawal Request</span>
+
+                    <span className="ms-2">Withdrawal Request</span>
                 </Link>
               </li>
               <li className={`${location.pathname === '/app/adminCommission' || location.pathname === '/app/transactionNew' || location.pathname === '/app/transactionDetail' ? 'active' : ''}  sidebar-layout`} >
                 <Link to="/app/adminCommission" className="svg-icon">
                   <i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+</svg>
+
                   </i>
                   <span className="ms-2">Admin Commission</span>
                 </Link>
