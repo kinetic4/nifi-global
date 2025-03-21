@@ -6,7 +6,7 @@ import Card from '../../../components/Card'
 //img
 import user1 from '/assets/images/user/1.jpg'
 import user5 from '/assets/images/user/5.jpg'
-import user6 from '/assets/images/user/6.jpg'
+// import user6 from '/assets/images/user/6.jpg'
 import user7 from '/assets/images/user/1.jpg'
 
 const avatarSizes = [
