@@ -12,10 +12,10 @@ import useDataTable from "../../../hooks/useDatatable";
 //DATA
 const tableData = [
   {
-    img: generatePath("/assets/images/products/2.jpg"),
-    name: '360 Deg 1080p Security Camera',
-    desc: 'Wifi Smart',
-    category: "Camera",
+    img: 'https://images.sftcdn.net/images/t_app-icon-s/p/75fb9925-6940-4347-bbaa-13240d69356e/3791836040/signals-auto-analysis-alert-crypto-pump-finder-logo',
+    name: 'Bitcoin',
+    desc: 'Crypto Currency',
+    category: "Crypto",
     price: "$749.49",
     quantity: '02',
     status: "Limited",
@@ -23,10 +23,10 @@ const tableData = [
     fill: '#db7e06'
   },
   {
-    img: generatePath("/assets/images/products/16.jpg"),
-    name: 'Airpods With Wireless Charging Case',
-    desc: 'Noise Cancellation, True Wireless',
-    category: "Headset",
+    img: 'https://d33epyjwhmr3r5.cloudfront.net/assets/images/currency/ltc.png',
+    name: 'Litecoin',
+    desc: 'Crypt currency',
+    category: "Crypto",
     price: "$229.9",
     quantity: '00',
     status: "Out Of Stock",
@@ -34,10 +34,10 @@ const tableData = [
     fill: '#F42B3D'
   },
   {
-    img: generatePath("/assets/images/products/1.jpg"),
-    name: 'Bassheads 220 Wired Headset',
-    desc: 'Molten Orange, In the Ear',
-    category: "Headset",
+    img: 'https://d3iuzwoiyg9qa8.cloudfront.net/webadmin/storage/public/airdrops/December2024/bckK34fgFA7vFD7MjdYdQlbRqqIrsdINIg3WFVRR.webp',
+    name: 'Ripple',
+    desc: 'Crypt currency',
+    category: "Crypto",
     price: "$74.98",
     quantity: '45',
     status: "In Stock",
@@ -45,10 +45,10 @@ const tableData = [
     fill: '#3cb72c'
   },
   {
-    img: generatePath("/assets/images/products/7.jpg"),
-    name: 'EO Wooden Card Pen Drive',
-    desc: '16 GB, White',
-    category: "Pendrive",
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT966ZmiPr4ORFDqdqOK5dXEcbrPPQ03SohjPwy-fq-poA-sdvU',
+    name: 'Dash',
+    desc: 'Crypt currency',
+    category: "Crypto",
     price: "$89.22",
     quantity: '05',
     status: "Limited",
@@ -56,70 +56,70 @@ const tableData = [
     fill: '#db7e06'
   },
   {
-    img: generatePath("/assets/images/products/12.jpg"),
-    name: 'FivePlus Nord 5G',
-    desc: '(12GB RAM, 256GB Storage)',
-    category: "Mobile",
-    price: "$2,399.99",
-    quantity: '80',
+    img: 'https://images.sftcdn.net/images/t_app-icon-s/p/75fb9925-6940-4347-bbaa-13240d69356e/3791836040/signals-auto-analysis-alert-crypto-pump-finder-logo',
+    name: 'Bitcoin',
+    desc: 'Crypto Currency',
+    category: "Crypto",
+    price: "$749.49",
+    quantity: '02',
+    status: "Limited",
+    status_class: "warning",
+    fill: '#db7e06'
+  },
+  {
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT966ZmiPr4ORFDqdqOK5dXEcbrPPQ03SohjPwy-fq-poA-sdvU',
+    name: 'Dash',
+    desc: 'Crypt currency',
+    category: "Crypto",
+    price: "$89.22",
+    quantity: '05',
+    status: "Limited",
+    status_class: "warning",
+    fill: '#db7e06'
+  },
+  {
+    img: 'https://d3iuzwoiyg9qa8.cloudfront.net/webadmin/storage/public/airdrops/December2024/bckK34fgFA7vFD7MjdYdQlbRqqIrsdINIg3WFVRR.webp',
+    name: 'Ripple',
+    desc: 'Crypt currency',
+    category: "Crypto",
+    price: "$74.98",
+    quantity: '45',
     status: "In Stock",
     status_class: "success",
     fill: '#3cb72c'
   },
   {
-    img: generatePath("/assets/images/products/6.jpg"),
-    name: 'HP v150W PENDRIVE',
-    desc: '64 GB (Blue, Black)',
-    category: "Pendrive",
-    price: "$39.99",
-    quantity: '30',
+    img: 'https://d3iuzwoiyg9qa8.cloudfront.net/webadmin/storage/public/airdrops/December2024/bckK34fgFA7vFD7MjdYdQlbRqqIrsdINIg3WFVRR.webp',
+    name: 'Ripple',
+    desc: 'Crypt currency',
+    category: "Crypto",
+    price: "$74.98",
+    quantity: '45',
     status: "In Stock",
     status_class: "success",
     fill: '#3cb72c'
   },
   {
-    img: generatePath("/assets/images/products/8.jpg"),
-    name: 'M10 FHD Plus with Active Pen Tablet',
-    desc: '(2nd Gen) 10.3 inches',
-    category: "Tablet",
-    price: "$962.49",
-    quantity: '00',
-    status: "Out Of Stock",
-    status_class: "danger",
-    fill: '#F42B3D'
+    img: 'https://images.sftcdn.net/images/t_app-icon-s/p/75fb9925-6940-4347-bbaa-13240d69356e/3791836040/signals-auto-analysis-alert-crypto-pump-finder-logo',
+    name: 'Bitcoin',
+    desc: 'Crypto Currency',
+    category: "Crypto",
+    price: "$749.49",
+    quantity: '02',
+    status: "Limited",
+    status_class: "warning",
+    fill: '#db7e06'
   },
   {
-    img: generatePath("/assets/images/products/4.jpg"),
-    name: 'Ryzen 5 Quad Core 3500U Thin Laptop',
-    desc: '8 GB/512 GB SSD/Windows 10 Home',
-    category: "Laptop",
-    price: "$2,499.99",
-    quantity: '10',
-    status: "In Stock",
-    status_class: "success",
-    fill: '#3cb72c'
-  },
-  {
-    img: generatePath("/assets/images/products/15.jpg"),
-    name: 'SDDDC2-256G-I35 256 GB OTG',
-    desc: 'Black, Type A to Type C',
-    category: "OTG Pendrive",
-    price: "$109.00",
-    quantity: '25',
-    status: "In Stock",
-    status_class: "success",
-    fill: '#3cb72c'
-  },
-  {
-    img: generatePath("/assets/images/products/5.jpg"),
-    name: 'Stone Portable Bluetooth Speaker',
-    desc: 'Black, Stereo Channel',
-    category: "Speaker",
-    price: "$599.99",
-    quantity: '80',
-    status: "In Stock",
-    status_class: "success",
-    fill: '#3cb72c'
+    img: 'https://images.sftcdn.net/images/t_app-icon-s/p/75fb9925-6940-4347-bbaa-13240d69356e/3791836040/signals-auto-analysis-alert-crypto-pump-finder-logo',
+    name: 'Bitcoin',
+    desc: 'Crypto Currency',
+    category: "Crypto",
+    price: "$749.49",
+    quantity: '02',
+    status: "Limited",
+    status_class: "warning",
+    fill: '#db7e06'
   },
 ];
 
@@ -128,7 +128,7 @@ const columns = [
     data: null,
     orderable: true,
     searchable: true,
-    title: "Product Name",
+    title: "Currency Name",
     render: function (row) {
       return `
       <div class="active-project-1 d-flex align-items-center mt-0 ">
@@ -228,7 +228,7 @@ const Plan = memo(() => {
                   <div className="modal-product-search d-flex flex-wrap">
                     <Form className="me-3 position-relative">
                       <Form.Group className="form-group mb-0">
-                        <Form.Control type="text" className="form-control" id="exampleInputText" placeholder="Search Product" />
+                        <Form.Control type="text" className="form-control" id="exampleInputText" placeholder="Search Plan" />
                         <Link className="search-link" to="#">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -236,11 +236,11 @@ const Plan = memo(() => {
                         </Link>
                       </Form.Group>
                     </Form>
-                    <Link to="/planAdd" className="btn btn-primary position-relative d-flex align-items-center justify-content-between">
+                    <Link to="/app/planAdd" className="btn btn-primary position-relative d-flex align-items-center justify-content-between">
                       <svg xmlns="http://www.w3.org/2000/svg" className="me-2" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                       </svg>
-                      Add Product
+                      Add Plan
                     </Link>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ const Plan = memo(() => {
             <Card className='card-block card-stretch'>
               <Card.Body className='p-0'>
                 <div className="d-flex justify-content-between align-items-center p-3 pb-md-0">
-                  <h5 className="fw-bold">Products List</h5>
+                  <h5 className="fw-bold">Plan List</h5>
                   <Button variant='secondary' size='sm' >
                     <svg xmlns="http://www.w3.org/2000/svg" className="me-1" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>

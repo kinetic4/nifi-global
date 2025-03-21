@@ -13,10 +13,7 @@ import "react-circular-progressbar/dist/styles.css";
 import { Card, Container, Row, Col, Dropdown, Table, Button } from "react-bootstrap";
 
 // img 
-import product1 from "/assets/images/products/1.jpg";
-import product2 from "/assets/images/products/2.jpg";
-import product13 from "/assets/images/products/13.jpg";
-import product4 from "/assets/images/products/4.jpg";
+
 import user1 from "/assets/images/user/1.jpg";
 import user5 from "/assets/images/user/5.jpg";
 import user2 from "/assets/images/user/2.jpg";
@@ -412,7 +409,7 @@ const Dashboard = () => {
           <Card className="card-block card-stretch card-height">
             <Card.Header className="card-header-border d-flex justify-content-between">
               <div className="header-title">
-                <h4 className="card-title">Top Selling Product</h4>
+                <h4 className="card-title">Top Selling Plans</h4>
               </div>
             </Card.Header>
             <div className="card-body-list">
@@ -421,60 +418,60 @@ const Dashboard = () => {
                   <div className="avatar">
                     <img
                       className="avatar avatar-img avatar-60 rounded"
-                      src={product1}
+                      src='https://images.sftcdn.net/images/t_app-icon-s/p/75fb9925-6940-4347-bbaa-13240d69356e/3791836040/signals-auto-analysis-alert-crypto-pump-finder-logo'
                       alt="1.jpg"
                     />
                   </div>
                   <div className="list-style-detail ms-3 me-2">
-                    <p className="mb-0">Rockerz Bluetooth Headset</p>
+                    <p className="mb-0">Bitcoin</p>
                   </div>
                   <div className="list-style-action d-flex justify-content-end ms-auto">
-                    <h6 className="fw-bold">$1,056</h6>
+                    <h6 className="fw-bold">$16</h6>
                   </div>
                 </li>
                 <li className="card-body list-item d-flex justify-content-start align-items-center border-bottom">
                   <div className="avatar">
                     <img
                       className="avatar avatar-img avatar-60 rounded"
-                      src={product2}
+                      src='https://d3iuzwoiyg9qa8.cloudfront.net/webadmin/storage/public/airdrops/December2024/bckK34fgFA7vFD7MjdYdQlbRqqIrsdINIg3WFVRR.webp'
                       alt="2.jpg"
                     />
                   </div>
                   <div className="list-style-detail ms-3 me-2">
-                    <p className="mb-0">Wifi Security Camera</p>
+                    <p className="mb-0">Ripple</p>
                   </div>
                   <div className="list-style-action d-flex justify-content-end ms-auto">
-                    <h6 className="fw-bold">$1,799</h6>
+                    <h6 className="fw-bold">$19</h6>
                   </div>
                 </li>
                 <li className="card-body list-item d-flex justify-content-start align-items-center border-bottom">
                   <div className="avatar">
                     <img
                       className="avatar avatar-img avatar-60 rounded"
-                      src={product13}
+                      src=' https://d33epyjwhmr3r5.cloudfront.net/assets/images/currency/ltc.png'
                       alt="3.jpg"
                     />
                   </div>
                   <div className="list-style-detail ms-3 me-2">
-                    <p className="mb-0">Stone Bluetooth Speaker</p>
+                    <p className="mb-0">Litecoin</p>
                   </div>
                   <div className="list-style-action d-flex justify-content-end ms-auto">
-                    <h6 className="fw-bold">$1,099</h6>
+                    <h6 className="fw-bold">$17</h6>
                   </div>
                 </li>
                 <li className="card-body list-item d-flex justify-content-start align-items-center">
                   <div className="avatar">
                     <img
                       className="avatar avatar-img avatar-60 rounded"
-                      src={product4}
+                      src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT966ZmiPr4ORFDqdqOK5dXEcbrPPQ03SohjPwy-fq-poA-sdvU'
                       alt="4.jpg"
                     />
                   </div>
                   <div className="list-style-detail ms-3 me-2">
-                    <p className="mb-0">Ryzen 5 Hexa Core 5600H</p>
+                    <p className="mb-0">Dash</p>
                   </div>
                   <div className="list-style-action d-flex justify-content-end ms-auto">
-                    <h6 className="fw-bold">$9,999</h6>
+                    <h6 className="fw-bold">$99</h6>
                   </div>
                 </li>
               </ul>

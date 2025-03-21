@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom'
 //Hooks
 import useDataTable from "../../../hooks/useDatatable";
 
-const generatePath = (path) => {
-  return window.origin + import.meta.env.BASE_URL + path;
-};
+import { generatePath } from 'react-router-dom';
 
 //DATA
 const tableData = [
@@ -142,10 +140,10 @@ const columns = [
     searchable: false,
     title: "Action",
     render: function () {
-      const orderdetails = generatePath('orderdetails');
+      const transactionDetail = generatePath('transactionDetail');
       return `
        <div class="d-flex justify-content-start align-items-center">
-                                                    <a  data-bs-toggle="tooltip" data-bs-placement="top" href="${orderdetails}" aria-label="View" data-bs-original-title="View">
+                                                    <a  data-bs-toggle="tooltip" data-bs-placement="top" href="${transactionDetail}" aria-label="View" data-bs-original-title="View">
                                                         <svg xmlns="http://www.w3.org/2000/svg" class="text-secondary mx-4" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
@@ -177,14 +175,14 @@ const Transaction = memo(() => {
           <Col>
             <div className="d-flex flex-wrap align-items-center justify-content-between gap-3 my-schedule mb-4">
               <div className="d-flex align-items-center justify-content-between">
-                <h4 className="fw-bold">All Orders</h4>
+                <h4 className="fw-bold">All Transactions</h4>
               </div>
               <div className="create-workform">
                 <div className="d-flex flex-wrap align-items-center justify-content-between">
                   <div className="modal-product-search d-flex flex-wrap">
                     <Form className="me-3 position-relative">
                       <Form.Group className="form-group mb-0">
-                        <Form.Control type="text" className="form-control" id="exampleInputText" placeholder="Search Order" />
+                        <Form.Control type="text" className="form-control" id="exampleInputText" placeholder="Search Transactions" />
                         <Link className="search-link" to="#">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -192,11 +190,11 @@ const Transaction = memo(() => {
                         </Link>
                       </Form.Group>
                     </Form>
-                    <Link to="/orderNew" className="btn btn-primary position-relative d-flex align-items-center justify-content-between">
+                    <Link to="/app/transactionNew" className="btn btn-primary position-relative d-flex align-items-center justify-content-between">
                       <svg xmlns="http://www.w3.org/2000/svg" className="me-2" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                       </svg>
-                      Add Order
+                      Add Transaction
                     </Link>
                   </div>
                 </div>
@@ -209,7 +207,7 @@ const Transaction = memo(() => {
             <Card className='card-block card-stretch'>
               <Card.Body className='p-0'>
                 <div className="d-flex justify-content-between align-items-center p-3 pb-0">
-                  <h5 className="fw-bold">Orders List</h5>
+                  <h5 className="fw-bold">Transaction List</h5>
                   <Button variant='secondary' size='sm' >
                     <svg xmlns="http://www.w3.org/2000/svg" className="me-1" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>

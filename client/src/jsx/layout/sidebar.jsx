@@ -18,7 +18,7 @@ const Sidebar = ({ activeMenu }) => {
   return (
     <div className="sidebar">
       <div className="brand-logo" >
-        <Link to={"/dashboard"}>
+        <Link to={"/app/dashboard"}>
           <img src={logo} alt=""  />
         </Link>
       </div>

@@ -9,10 +9,8 @@ import useDataTable from "../../../hooks/useDatatable";
 // img
 import User1 from '/assets/images/user/1.jpg'
 import User2 from '/assets/images/user/2.jpg'
-import User3 from '/assets/images/user/3.jpg'
 import User4 from '/assets/images/user/4.jpg'
 import User5 from '/assets/images/user/5.jpg'
-import User6 from '/assets/images/user/6.jpg'
 
 const generatePath = (path) => {
   return window.origin + import.meta.env.BASE_URL + path;
@@ -40,7 +38,7 @@ const tableData = [
   {
     name: 'Caitriona Balfe',
     des: 'Manager',
-    img: `${User3}`,
+    img: `${User1}`,
     email: 'caitrionabalfe204@blueberry.com',
     RefferalId: '9e5244a7-7a61-4841-96e6-b4c425152dc9',
     phone: '+251 966 522 456'
@@ -64,7 +62,7 @@ const tableData = [
   {
     name: 'Noah Jupe',
     des: `${"Grossman's"}`,
-    img: `${User6}`,
+    img: `${User2}`,
     email: 'nnoahjupe@blueberry.com',
     RefferalId: "9e5244a7-7a61-4841-96e6-b4c425152dc9",
     phone: '+251 5225-98554'
@@ -72,7 +70,7 @@ const tableData = [
   {
     name: 'Tracy Letts',
     des: 'Jeans Unlimited',
-    img: `${User3}`,
+    img: `${User1}`,
     email: 'tracyetts@blueberry.com',
     RefferalId: '9e5244a7-7a61-4841-96e6-b4c425152dc9',
     phone: '+22 562 4587 55'
@@ -88,7 +86,7 @@ const tableData = [
   {
     name: 'Remo Girone',
     des: 'Apple Walter',
-    img: `${User6}`,
+    img: `${User2}`,
     email: 'remo.girone420@blueberry.com',
     RefferalId: '9e5244a7-7a61-4841-96e6-b4c425152dc9',
     phone: '+6 14552-15771'
@@ -96,7 +94,7 @@ const tableData = [
   {
     name: 'Jack McMullen',
     des: 'Noor Cafeteria',
-    img: `${User3}`,
+    img: `${User1}`,
     email: 'jackmullen@blueberry.com',
     RefferalId: '9e5244a7-7a61-4841-96e6-b4c425152dc9',
     phone: '+25 4415-21445'
@@ -142,8 +140,8 @@ const columns = [
     searchable: false,
     title: "Action",
     render: function () {
-      const customerView = generatePath('customerView');
-      const customerEdit = generatePath('customerEdit');
+      const customerView = generatePath('app/customerView');
+      const customerEdit = generatePath('app/customerEdit');
       return `<div class="d-flex justify-content-start align-items-center">
   <a
     
@@ -217,7 +215,7 @@ const Customer = memo(() => {
                         </Link>
                       </Form.Group>
                     </Form>
-                    <Link to="/customerAdd" className="btn btn-primary position-relative d-flex align-items-center justify-content-between">
+                    <Link to="/app/customerAdd" className="btn btn-primary position-relative d-flex align-items-center justify-content-between">
                       <svg xmlns="http://www.w3.org/2000/svg" className="me-2" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                       </svg>

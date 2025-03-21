@@ -47,15 +47,15 @@ const TransactionDetail = memo(() => {
             <div className="mb-3">
               <nav aria-label="breadcrumb">
                 <Breadcrumb bsPrefix='breadcrumb p-0 mb-0'>
-                  <Breadcrumb.Item href="/order">Orders</Breadcrumb.Item>
-                  <Breadcrumb.Item active href='#'>Order Details</Breadcrumb.Item>
+                  <Breadcrumb.Item href="/order">Transaction</Breadcrumb.Item>
+                  <Breadcrumb.Item active href='#'>Transaction Details</Breadcrumb.Item>
                 </Breadcrumb>
               </nav>
             </div>
           </Col>
           <Col lg={12} className='mb-3'>
             <div className='d-flex justify-content-between align-items-center'>
-              <h4 className='fw-bold'>Order Details</h4>
+              <h4 className='fw-bold'>Transaction Details</h4>
               <Link className="btn btn-primary btn-sm" to="/pages-invoice">
                 <svg xmlns="http://www.w3.org/2000/svg" className="mr-2" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
@@ -70,7 +70,7 @@ const TransactionDetail = memo(() => {
             <Card>
               <ListGroup as='ul' variant="flush" className='rounded'>
                 <ListGroup.Item as="li" className="p-3">
-                  <h5 className="fw-bold pb-2">Order Info</h5>
+                  <h5 className="fw-bold pb-2">Transaction Info</h5>
                   <div className="table-responsive">
                     <table className="table table-borderless mb-0">
                       <tbody>
@@ -185,7 +185,7 @@ const TransactionDetail = memo(() => {
           <Col lg={8}>
             <Card>
               <ListGroup as='ul' variant="flush" className='rounded'>
-                <ListGroup.Item className="p-3"><h5 className="fw-bold">Order Items</h5></ListGroup.Item>
+                <ListGroup.Item className="p-3"><h5 className="fw-bold">Transaction Items</h5></ListGroup.Item>
                 <ListGroup.Item className="p-0">
                   <div className="table-responsive">
                     <table className="table mb-0">

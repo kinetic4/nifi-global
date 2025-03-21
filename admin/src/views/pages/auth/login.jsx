@@ -61,7 +61,9 @@ const Login = memo(() => {
                         </Form.Group>
                       </Col>
                     </Row>
+                    <Link to='/app/dashboard'>
                     <Button variant='primary' type="submit" className="btn-block mt-2 w-100">Log In</Button>
+                    </Link>
                     <Col lg={12} className="mt-3">
                       <p className="mb-0 text-center">Don't have an account? <Link to="/auth/register">Sign Up</Link></p>
                     </Col>

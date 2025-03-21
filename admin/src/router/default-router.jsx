@@ -111,285 +111,342 @@ import Maintenance from "../views/pages/maintenance";
 import Pricing from "../views/pages/pricing";
 import Timeline from "../views/pages/timeline";
 import UserProfile from "../views/pages/userProfile";
+import { Navigate } from "react-router-dom";
 
 
 export const DefaultRoute = [
   {
-    path: "/",
+    path: '/',
+    element: <BlankLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Navigate to='/login' replace />
+      },
+      {
+        path: "/login",
+        element: <Login />
+      },
+      {
+        path: "/auth/confirmMail",
+        element: <ConfirmMail />,
+      },
+      {
+        path: "/auth/register",
+        element: <Register />,
+      },
+      {
+        path: "/auth/resetPassword",
+        element: <ResetPassword />,
+      },
+      {
+        path: "/auth/sign-in",
+        element: <SignIn />,
+      },
+      {
+        path: "/auth/recover-password",
+        element: <RecoverPassword />,
+      },
+      {
+        path: "/auth/lock-screen",
+        element: <LockScreen />,
+      },
+      // Error Pages
+      {
+        path: "/error/error-404",
+        element: <Error404 />,
+      },
+      {
+        path: "/error/error-500",
+        element: <Error500 />,
+      },
+      {
+        path: "/Maintenance",
+        element: <Maintenance />,
+      },
+      {
+        path: "/comingSoon",
+        element: <ComingSoon />,
+      },
+    ]
+  },
+
+  {
+    path: "/app",
     element: <DefaultLayout />,
     children: [
       {
-        path: "/",
-        element: < Dashboard />,
+        path: "/app",
+        element: <Navigate to="/app/dashboard" replace />
       },
       {
-        path: "/customer",
+        path: "/app/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "/app/customer",
         element: <Customer />,
       },
       {
-        path: "/customerAdd",
+        path: "/app/customerAdd",
         element: <CustomerAdd />,
       },
       {
-        path: "/customerEdit",
+        path: "/app/customerEdit",
         element: <CustomerEdit />,
       },
       {
-        path: "/customerView",
+        path: "/app/customerView",
         element: <CustomerView />,
       },
       {
-        path: "/pages-invoice",
+        path: "/app/pages-invoice",
         element: <Invoice />,
       },
       {
-        path: "/invoiceView",
+        path: "/app/invoiceView",
         element: <InvoiceView />,
       },
       {
-        path: "/transaction",
+        path: "/app/transaction",
         element: <Transaction />,
       },
       {
-        path: "/transactionNew",
+        path: "/app/transactionNew",
         element: <TransactionNew />,
       },
       {
-        path: "/transactionDetail",
+        path: "/app/transactionDetail",
         element: <TransactionDetail />,
       },
       {
-        path: "/plan",
+        path: "/app/plan",
         element: <Plan />,
       },
       {
-        path: "/planAdd",
+        path: "/app/planAdd",
         element: <PlanAdd />,
       },
 
       // Calendar
       {
-        path: "/Calendar",
+        path: "/app/Calendar",
         element: <Calendar />,
       },
 
       // Todo
       {
-        path: "/todo",
+        path: "/app/todo",
         element: <Todo />,
       },
 
       // Form
       // Form Controls
       {
-        path: "/formcheckbox",
+        path: "/app/formcheckbox",
         element: <Formcheckbox />,
       },
       {
-        path: "/formElements",
+        path: "/app/formElements",
         element: <FormElements />,
       },
       {
-        path: "/formInput",
+        path: "/app/formInput",
         element: <FormInput />,
       },
       {
-        path: "/formRadio",
+        path: "/app/formRadio",
         element: <FormRadio />,
       },
       {
-        path: "/formSwitch",
+        path: "/app/formSwitch",
         element: <FormSwitch />,
       },
       {
-        path: "/formTextarea",
+        path: "/app/formTextarea",
         element: <FormTextarea />,
       },
       {
-        path: "/formValidation",
+        path: "/app/formValidation",
         element: <FormValidation />,
       },
 
       // Form Widgets
       {
-        path: "/datepickr",
+        path: "/app/datepickr",
         element: <Datepickr />,
       },
       {
-        path: "/fileUpload",
+        path: "/app/fileUpload",
         element: <FileUpload />,
       },
       {
-        path: "/form-quill",
+        path: "/app/form-quill",
         element: <FormQuill />,
       },
       {
-        path: "/choicejs",
+        path: "/app/choicejs",
         element: <Choicejs />,
       },
 
       // Table
       {
-        path: "/tables-basic",
+        path: "/app/tables-basic",
         element: <BasicTable />,
       },
       {
-        path: "/tables-data",
+        path: "/app/tables-data",
         element: <DataTable />,
       },
       {
-        path: "/editableTable",
+        path: "/app/editableTable",
         element: <EditableTable />,
       },
 
       // UI Elements
       {
-        path: "/alerts",
+        path: "/app/alerts",
         element: <Alerts />,
       },
       {
-        path: "/avatars",
+        path: "/app/avatars",
         element: <Avatars />,
       },
       {
-        path: "/badges",
+        path: "/app/badges",
         element: <Badges />,
       },
       {
-        path: "/boxShadow",
+        path: "/app/boxShadow",
         element: <BoxShadow />,
       },
       {
-        path: "/breadcrumb",
+        path: "/app/breadcrumb",
         element: <Breadcrumb />,
       },
       {
-        path: "/buttons",
+        path: "/app/buttons",
         element: <Buttons />,
       },
       {
-        path: "/buttonsGroup",
+        path: "/app/buttonsGroup",
         element: <ButtonsGroup />,
       },
       {
-        path: "/cards",
+        path: "/app/cards",
         element: <Cards />,
       },
       {
-        path: "/carousel",
+        path: "/app/carousel",
         element: <Carousels />,
       },
       {
-        path: "/colors",
+        path: "/app/colors",
         element: <Colors />,
       },
       {
-        path: "/grid",
+        path: "/app/grid",
         element: <Grid />,
       },
       {
-        path: "/images",
+        path: "/app/images",
         element: <Images />,
       },
       {
-        path: "/listGroup",
+        path: "/app/listGroup",
         element: <ListGroups />,
       },
       {
-        path: "/modal",
+        path: "/app/modal",
         element: <Modals />,
       },
       {
-        path: "/notification",
+        path: "/app/notification",
         element: <Notification />,
       },
       {
-        path: "/pagination",
+        path: "/app/pagination",
         element: <Paginations />,
       },
       {
-        path: "/popovers",
+        path: "/app/popovers",
         element: <Popovers />,
       },
       {
-        path: "/progressbars",
+        path: "/app/progressbars",
         element: <Progressbars />,
       },
       {
-        path: "/tabs",
+        path: "/app/tabs",
         element: <Tabs />,
       },
       {
-        path: "/tooltips",
+        path: "/app/tooltips",
         element: <Tooltips />,
       },
       {
-        path: "/typography",
+        path: "/app/typography",
         element: <Typography />,
       },
       {
-        path: "/video",
+        path: "/app/video",
         element: <Video />,
       },
 
       {
-        path: "/charts",
+        path: "/app/charts",
         element: <Charts />,
       },
       {
-        path: "/icons",
+        path: "/app/icons",
         element: <Icons />,
       },
 
       // Extra Pages
       {
-        path: "/privacy-policy",
+        path: "/app/privacy-policy",
         element: <PrivacyPolicy />,
       },
       {
-        path: "/termsofUse",
+        path: "/app/termsofUse",
         element: <TermsofUse />,
       },
       {
-        path: "/user-AccountSetting",
+        path: "/app/user-AccountSetting",
         element: <UserAccountSetting />,
       },
       {
-        path: "/user-privacySetting",
+        path: "/app/user-privacySetting",
         element: <UserprivacySetting />,
       },
       {
-        path: "/user-profileEdit",
+        path: "/app/user-profileEdit",
         element: <UserProfileEdit />,
       },
 
       // Pages Section
       {
-        path: "/pages-blank-page",
+        path: "/app/pages-blank-page",
         element: <BlankPage />,
       },
       {
-        path: "/chat",
+        path: "/app/chat",
         element: <Chat />,
       },
       {
-        path: "/faq",
+        path: "/app/faq",
         element: <Faq />,
       },
       {
-        path: "/Pricing",
+        path: "/app/Pricing",
         element: <Pricing />,
       },
       {
-        path: "/timeline",
+        path: "/app/timeline",
         element: <Timeline />,
       },
       {
-        path: "/Pricing",
-        element: <Pricing />,
-      },
-      {
-        path: "/userProfile",
+        path: "/app/userProfile",
         element: <UserProfile />,
       },
     ]
@@ -400,11 +457,15 @@ export const DefaultRoute = [
 // Blank Layout route
 export const AuthRoutes = [
   {
-    path: '',
+    path: '/',
     element: <BlankLayout />,
     children: [
       {
-        path: '/auth/login',
+        path: '/',
+        element: <Navigate to='/login' replace />
+      },
+      {
+        path: "/login",
         element: <Login />
       },
       {

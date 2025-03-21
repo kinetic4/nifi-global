@@ -43,8 +43,8 @@ const SidebarStyle = () => {
       <div className={`iq-sidebar sidebar-default`}>
         <div className="iq-sidebar-logo d-flex align-items-end justify-content-between">
           <Link to="/" className="header-logo">
-            <img src={logo} className={`img-fluid rounded-normal light-logo`} alt="logo" />
-            <span>Datum</span>
+            <img src={logo} className={`img-fluid rounded-normal light-logo `} style={{height: '72px'}} alt="logo" />
+            <span>Nifi Global</span>
           </Link>
           <div className="side-menu-bt-sidebar-1">
             <svg onClick={minisidbar} xmlns="http://www.w3.org/2000/svg" className="text-light wrapper-menu" width="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,7 +57,7 @@ const SidebarStyle = () => {
           <nav className="iq-sidebar-menu">
             <Accordion as="ul" id="iq-sidebar-toggle" className="side-menu" onSelect={(e) => setActiveMenu(e)}>
               <li className={`${location.pathname === '/' ? 'active' : ''}  sidebar-layout`}>
-                <Link to="/" className="svg-icon">
+                <Link to="/app/dashboard" className="svg-icon">
                   <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -71,8 +71,8 @@ const SidebarStyle = () => {
               <li className="px-3 pt-3 pb-2 ">
                 <span className="text-uppercase small fw-bold">Application</span>
               </li>
-              <li className={`${location.pathname === '/customer' || location.pathname === '/customerAdd' || location.pathname === '/customerEdit' ?  'active' : ''}  sidebar-layout`}>
-                <Link to="/customer" className="svg-icon ">
+              <li className={`${location.pathname === '/app/customer' || location.pathname === '/app/customerAdd' || location.pathname === '/app/customerEdit' ?  'active' : ''}  sidebar-layout`}>
+                <Link to="/app/customer" className="svg-icon ">
                   <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -81,8 +81,8 @@ const SidebarStyle = () => {
                   <span className="ms-2">Customer</span>
                 </Link>
               </li>
-              <li className={`${location.pathname === '/plan' || location.pathname === '/planAdd' ? 'active' : ''}  sidebar-layout`} >
-                <Link to="/plan" className="svg-icon">
+              <li className={`${location.pathname === '/app/plan' || location.pathname === '/app/planAdd' ? 'active' : ''}  sidebar-layout`} >
+                <Link to="/app/plan" className="svg-icon">
                   <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -91,8 +91,8 @@ const SidebarStyle = () => {
                   <span className="ms-2">Plan</span>
                 </Link>
               </li>
-              <li className={`${location.pathname === '/transactions' || location.pathname === '/transactionNew' || location.pathname === '/transactionDetail' ? 'active' : ''}  sidebar-layout`} >
-                <Link to="/transaction" className="svg-icon">
+              <li className={`${location.pathname === '/app/transactions' || location.pathname === '/app/transactionNew' || location.pathname === '/app/transactionDetail' ? 'active' : ''}  sidebar-layout`} >
+                <Link to="/app/transaction" className="svg-icon">
                   <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -101,7 +101,7 @@ const SidebarStyle = () => {
                   <span className="ms-2">Transactions</span>
                 </Link>
               </li>
-              <li className={`${location.pathname === '/pages-invoice' || location.pathname === '/invoiceView' ? 'active' : ''}  sidebar-layout`}>
+              {/* <li className={`${location.pathname === '/pages-invoice' || location.pathname === '/invoiceView' ? 'active' : ''}  sidebar-layout`}>
                 <Link to="/pages-invoice" className="svg-icon">
                   <i>
                     <svg className="icon line" width="18" id="receipt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
@@ -306,10 +306,10 @@ const SidebarStyle = () => {
                     </svg>
                   </i><span className="ms-2">Timeline</span>
                 </Link>
-              </li>
+              </li> */}
 
               {/* Components */}
-              <li className="px-3 pt-3 pb-2">
+              {/* <li className="px-3 pt-3 pb-2">
                 <span className="text-uppercase small fw-bold">Components</span>
               </li>
               <Accordion.Item as="li" eventKey="sidebar-icons" bsPrefix={`nav-item  ${active === 'icons' ? 'active' : ''} `} className='sidebar-layout' onClick={() => setActive('icons')}>
@@ -748,7 +748,7 @@ const SidebarStyle = () => {
                   </i>
                   <span className="ms-2">Icon</span>
                 </Link>
-              </li>
+              </li> */}
              <div className="mb-5 pb-5"></div>
              <div className="mb-2 pb-2"></div> 
             </Accordion>
