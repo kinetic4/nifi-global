@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Form, Button, Card, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "/assets/images/logo-dark.png";
+import Logo from "/assets/images/logo-2.jpeg";
 
 const ComingSoon = () => {
   const [timeRemaining, setTimeRemaining] = useState({
