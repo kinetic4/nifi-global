@@ -44,12 +44,12 @@ const TransactionNew = memo(() => {
               <div className='d-flex align-items-center justify-content-between'>
                 <nav style={{ '--bs-breadcrumb-divider': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E\")" }}>
                   <Breadcrumb bsPrefix='breadcrumb pb-0 mb-0 ps-0'>
-                    <Breadcrumb.Item href={order}>Orders</Breadcrumb.Item>
-                    <Breadcrumb.Item href="#" active={true}>Add Order</Breadcrumb.Item>
+                    <Breadcrumb.Item href={order}>Transactions</Breadcrumb.Item>
+                    <Breadcrumb.Item href="#" active={true}>Add Transactions</Breadcrumb.Item>
                   </Breadcrumb>
                 </nav>
               </div>
-              <Link to="/order" className='btn btn-primary btn-sm d-flex align-items-center justify-content-between'>
+              <Link to="/app/transaction" className='btn btn-primary btn-sm d-flex align-items-center justify-content-between'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd"></path>
                 </svg>
@@ -58,7 +58,7 @@ const TransactionNew = memo(() => {
             </div>
           </Col>
           <Col lg={12} className='mb-3 d-flex justify-content-between'>
-            <h4 className='fw-bold d-flex align-items-center'>New Order</h4>
+            <h4 className='fw-bold d-flex align-items-center'>New Transactions</h4>
           </Col>
         </Row>
         <Card>
@@ -108,12 +108,18 @@ const TransactionNew = memo(() => {
                     <Form.Label htmlFor="Text7" className='fw-bold text-muted text-uppercase'>Comment</Form.Label>
                     <textarea id='Text7' placeholder='Enter your comment' rows={3} className='form-control'></textarea>
                   </Col>
+                  <ListGroup.Item as="li" className="p-3">
+                <div className="d-flex justify-content-end align-items-center">
+                  {/* Total: <p className="ms-2 mb-0 fw-bold">${sum.toLocaleString('en-US')}</p> */}
+                  <Button variant="primary" className="ms-5 btn-sm">Submit</Button>
+                </div>
+              </ListGroup.Item>
                 </Form>
               </Col>
             </Row>
           </Card.Body>
         </Card>
-        <Card>
+        {/* <Card>
           <Card.Body className="p-0">
             <ListGroup variant="flush" as='ul'>
               <ListGroup.Item as="li" className="p-3">
@@ -187,15 +193,10 @@ const TransactionNew = memo(() => {
                   </table>
                 </div>
               </ListGroup.Item>
-              <ListGroup.Item as="li" className="p-3">
-                <div className="d-flex justify-content-end align-items-center">
-                  Total: <p className="ms-2 mb-0 fw-bold">${sum.toLocaleString('en-US')}</p>
-                  <Button variant="primary" className="ms-5 btn-sm">Create Order</Button>
-                </div>
-              </ListGroup.Item>
+             
             </ListGroup>
           </Card.Body>
-        </Card>
+        </Card> */}
       </Container>
     </Fragment>
   )

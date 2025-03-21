@@ -112,6 +112,8 @@ import Pricing from "../views/pages/pricing";
 import Timeline from "../views/pages/timeline";
 import UserProfile from "../views/pages/userProfile";
 import { Navigate } from "react-router-dom";
+import WithdrawalRequest from "../views/app/withdrawl-request/withdrawlRequest";
+import AdminCommission from "../views/app/admin commission/adminCommission";
 
 
 export const DefaultRoute = [
@@ -218,6 +220,14 @@ export const DefaultRoute = [
       {
         path: "/app/transactionDetail",
         element: <TransactionDetail />,
+      },
+      {
+        path: "/app/withdrawlRequest",
+        element: <WithdrawalRequest />
+      },
+      {
+        path: "/app/adminCommission",
+        element: <AdminCommission />
       },
       {
         path: "/app/plan",

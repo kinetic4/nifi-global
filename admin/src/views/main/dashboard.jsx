@@ -478,7 +478,7 @@ const Dashboard = () => {
             </div>
           </Card>
         </Col>
-        <Col md="4">
+        <Col md="8">
           <Row>
             <Col md="12">
               <Card className="bg-primary">
@@ -554,7 +554,7 @@ const Dashboard = () => {
           <Card className="card-block card-stretch card-height">
             <Card.Header className="d-flex justify-content-between">
               <div className="header-title">
-                <h4 className="card-title">Upcoming Events</h4>
+                <h4 className="card-title">Registered User</h4>
               </div>
               <div className="card-header-toolbar d-flex align-items-center">
                 <Dropdown>
@@ -848,7 +848,7 @@ const Dashboard = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col lg="4" md="6">
+        {/* <Col lg="4" md="6">
       <Card>
         <Card.Body>
           <h4 className="fw-bold mb-3">Popular Categories</h4>
@@ -918,8 +918,8 @@ const Dashboard = () => {
           </div>
         </Card.Body>
       </Card>
-    </Col>
-        <Col lg="8" md="12">
+    </Col> */}
+        <Col lg="12" md="12">
           <Card>
             <Card.Header className="d-flex justify-content-between">
               <div className="header-title">
@@ -1082,14 +1082,14 @@ const Dashboard = () => {
 
           </Card>
         </Col>
-        <Col lg="4" md="12" className="col-lg-4 col-md-12">
+        {/* <Col lg="4" md="12" className="col-lg-4 col-md-12">
           <Card>
             <Card.Body>
               <h4 className="fw-bold mb-3">City Orders Statistics</h4>
               <Leaflet id="chart-map-column-04" className="custom-chart" />
             </Card.Body>
           </Card>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );

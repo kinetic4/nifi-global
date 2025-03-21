@@ -19,8 +19,8 @@ const Login = memo(() => {
                     <img src={generatePath('/assets/images/logo-2.jpeg')}  alt="logo" className="img-fluid rounded-normal" />
                   </Link>
                   <h3 className='mb-3 text-center'>Sign In</h3>
-                  <p className="text-center text-secondary mb-4">Log in to your account to continue</p>
-                  <div className="social-btn d-flex justify-content-around align-items-center mb-4">
+                  {/* <p className="text-center text-secondary mb-4">Log in to your account to continue</p> */}
+                  {/* <div className="social-btn d-flex justify-content-around align-items-center mb-4">
                     <Button variant='outline-light'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="88.428 12.828 107.543 207.085">
                         <path d="M158.232 219.912v-94.461h31.707l4.747-36.813h-36.454V65.134c0-10.658 2.96-17.922 18.245-17.922l19.494-.009V14.278c-3.373-.447-14.944-1.449-28.406-1.449-28.106 0-47.348 17.155-47.348 48.661v27.149H88.428v36.813h31.788v94.461l38.016-.001z" fill="#3c5a9a"></path>
@@ -39,10 +39,10 @@ const Login = memo(() => {
                         <path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570A  70,  70 0 0 1 370, 523A  70,  70 0 0 0 401, 521A  70,  70 0 0 1 344, 455A  70,  70 0 0 0 372, 460A  70,  70 0 0 1 354, 370A 195, 195 0 0 0 495, 442A  67,  67 0 0 1 611, 380A 117, 117 0 0 0 654, 363A  65,  65 0 0 1 623, 401A 117, 117 0 0 0 662, 390A  65,  65 0 0 1 630, 425Z" fill="#3BA9EE"></path>
                       </svg>
                     </Button>
-                  </div>
-                  <div className="mb-5">
+                  </div> */}
+                  {/* <div className="mb-5">
                     <p className="line-around text-secondary mb-0"><span className="line-around-1">or login with email</span></p>
-                  </div>
+                  </div> */}
                   <Form>
                     <Row >
                       <Col lg={12} >

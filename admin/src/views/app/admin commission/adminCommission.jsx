@@ -8,7 +8,7 @@ const generatePath = (path) => {
   return window.origin + import.meta.env.BASE_URL + path;
 };
 
-const PlanAdd = () => {
+const AdminCommission = () => {
   const categories = [
     { value: 'selected', label: 'Select Category' },
     { value: 'electronics', label: 'Electronics' },
@@ -29,18 +29,17 @@ const PlanAdd = () => {
       <Row>
         <Col lg={12} className="mb-2">
           <div className="d-flex flex-wrap align-items-center justify-content-between">
-            <div className="d-flex align-items-center justify-content-between">
+            {/* <div className="d-flex align-items-center justify-content-between">
               <Nav
                 style={{ '--bs-breadcrumb-divider': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E\")" }}
                 aria-label="breadcrumb"
               >
                 <Breadcrumb bsPrefix="breadcrumb ps-0 mb-0 pb-0">
-                  <Breadcrumb.Item href='/app/plan'>Plan</Breadcrumb.Item>
-                  <Breadcrumb.Item active>Add Plan</Breadcrumb.Item>
+                  <Breadcrumb.Item href='/app/plan'>Admin Commission</Breadcrumb.Item>
                 </Breadcrumb>
               </Nav>
-            </div>
-            <Button href='/app/plan' className="btn-sm d-flex align-items-center justify-content-between ms-2">
+            </div> */}
+            {/* <Button href='/app/plan' className="btn-sm d-flex align-items-center justify-content-between ms-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" fill="currentColor">
                 <path
                   fillRule="evenodd"
@@ -49,30 +48,30 @@ const PlanAdd = () => {
                 />
               </svg>
               <span className="ms-2">Back</span>
-            </Button>
+            </Button> */}
           </div>
         </Col>
         <Col lg={12} className="mb-3 d-flex justify-content-between">
-          <h4 className="fw-bold d-flex align-items-center">New Plan</h4>
+          <h4 className="fw-bold d-flex align-items-center">Admin Commission</h4>
         </Col>
         <Col lg={12}>
           <Card>
             <Card.Body>
-              <h5 className="fw-bold mb-3">Basic Information</h5>
+              <h5 className="fw-bold mb-3">Set Commission</h5>
               <Form className="row g-3">
-                <Col md={6} className="mb-3">
-                  <Form.Label className="fw-bold text-muted text-uppercase">Plan Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter Product Name" />
+                <Col md={12} className="mb-3">
+                  <Form.Label className="fw-bold text-muted text-uppercase">Commission Percentage</Form.Label>
+                  <Form.Control type="text" placeholder="Enter Commission Percentage" />
                 </Col>
                 {/* <Col md={6} className="mb-3">
 
                   <Form.Label className="fw-bold text-muted text-uppercase">Category</Form.Label>
                   <ChoicesJs options={categories} className="js-choice" select="one" />
                 </Col> */}
-                <Col md={6} className="mb-3">
+                {/* <Col md={6} className="mb-3">
                   <Form.Label className="fw-bold text-muted text-uppercase">Plan Code</Form.Label>
                   <Form.Control type="text" placeholder="Enter Product Code" />
-                </Col>
+                </Col> */}
                 {/* <Col md={6} className="mb-3">
                   <Form.Label className="fw-bold text-muted text-uppercase">Product SKU</Form.Label>
                   <Form.Control type="text" placeholder="Enter Product SKU" />
@@ -85,10 +84,10 @@ const PlanAdd = () => {
                   <Form.Label className="fw-bold text-muted text-uppercase">Quantity</Form.Label>
                   <Form.Control type="text" placeholder="Enter Quantity" />
                 </Col> */}
-                <Col md={6} className="mb-3">
+                {/* <Col md={6} className="mb-3">
                   <Form.Label className="fw-bold text-muted text-uppercase">Plan Price</Form.Label>
                   <Form.Control type="text" placeholder="Enter Price" />
-                </Col>
+                </Col> */}
                 {/* <Col md={6} className="mb-3">
                   <Form.Label className="fw-bold text-muted text-uppercase">Tax</Form.Label>
                   <Form.Control type="text" placeholder="Enter Tax" />
@@ -99,14 +98,19 @@ const PlanAdd = () => {
                     <ChoicesJs options={tags} className="js-choice" select="multi" />
                   </Form.Group>
                 </Col> */}
-                <Col md={12} className="mb-3">
+                {/* <Col md={12} className="mb-3">
                   <Form.Label className="fw-bold text-muted text-uppercase">Description</Form.Label>
                   <Form.Control as="textarea" rows={3} placeholder="Enter Description" />
-                </Col>
+                </Col> */}
+                 <div className="d-flex justify-content-end mt-3">
+                <Button variant="primary" >
+                  Submit
+                </Button>
+              </div>
               </Form>
             </Card.Body>
           </Card>
-          <Card>
+          {/* <Card>
             <Card.Body>
               <h5 className="fw-bold mb-3">Plan Image</h5>
               <Card.Body className="bg-body rounded text-body">
@@ -142,17 +146,13 @@ const PlanAdd = () => {
                   <p className="mb-0 text-muted fw-bold">Drop files here or click to upload</p>
                 </div>
               </Card.Body>
-              <div className="d-flex justify-content-end mt-3">
-                <Button variant="primary" >
-                  Create Product
-                </Button>
-              </div>
+             
             </Card.Body>
-          </Card>
+          </Card> */}
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default PlanAdd;
+export default AdminCommission;
