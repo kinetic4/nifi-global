@@ -12,7 +12,7 @@ import User2 from '/assets/images/user/2.jpg'
 import User3 from '/assets/images/user/3.jpg'
 import User4 from '/assets/images/user/4.jpg'
 import User5 from '/assets/images/user/5.jpg'
-import User6 from '/assets/images/user/6.jpg'
+// import User6 from '/assets/images/user/6.jpg'
 import User7 from '/assets/images/user/1.jpg'
 
 const Chat = () => {
