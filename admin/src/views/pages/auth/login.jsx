@@ -16,7 +16,7 @@ const Login = memo(() => {
               <Card>
                 <Card.Body>
                   <Link to="/" className="auth-logo">
-                    <img src={generatePath('/assets/images/logo-dark.png')}  alt="logo" className="img-fluid rounded-normal" />
+                    <img src={generatePath('/assets/images/logo-2.jpeg')}  alt="logo" className="img-fluid rounded-normal" />
                   </Link>
                   <h3 className='mb-3 text-center'>Sign In</h3>
                   <p className="text-center text-secondary mb-4">Log in to your account to continue</p>
